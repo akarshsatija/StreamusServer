@@ -9,12 +9,10 @@ namespace Streamus_Web_API.Dto
     {
         public Guid Id { get; set; }
         public string GooglePlusId { get; set; }
-        public string Name { get; set; }
         public List<PlaylistDto> Playlists { get; set; }
 
         public UserDto()
         {
-            Name = string.Empty;
             GooglePlusId = string.Empty;
             Playlists = new List<PlaylistDto>();
         }

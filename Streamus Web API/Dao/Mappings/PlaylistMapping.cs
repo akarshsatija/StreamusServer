@@ -19,7 +19,9 @@ namespace Streamus_Web_API.Dao.Mappings
 
             HasMany(p => p.Items)
                 .Inverse()
-                .Cascade.AllDeleteOrphan().KeyColumn("PlaylistId");
+                .Cascade
+                .AllDeleteOrphan()
+                .KeyColumn("PlaylistId");
 
             References(p => p.User).Column("UserId");
         }
