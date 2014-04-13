@@ -51,9 +51,10 @@ namespace Streamus_Web_API.Domain
         {
             Title = playlistItem.Title;
             SongId = playlistItem.SongId;
-            Author = playlistItem.Author;
             SongType = playlistItem.SongType;
             SongTitle = playlistItem.SongTitle;
+            Duration = playlistItem.Duration;
+            Author = playlistItem.Author;
             Cid = playlistItem.Cid;
         }
 
