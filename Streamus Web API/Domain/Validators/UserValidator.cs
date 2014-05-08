@@ -6,8 +6,8 @@ namespace Streamus_Web_API.Domain.Validators
     {
         public UserValidator()
         {
-            //  Max length of 50 is just a precaution. Could probably get away with 21, but giving room for growth.
-            RuleFor(user => user.GooglePlusId).NotNull().Length(0, 30);
+            RuleFor(user => user.Name).Length(0, 255);
+            RuleFor(user => user.GooglePlusId).NotNull();
         }
     }
 }
